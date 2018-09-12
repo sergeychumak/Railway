@@ -1,0 +1,29 @@
+@import './../variables';
+
+.#{$css-prefix} {
+  &.button {
+    padding: 0.6rem;
+    display: inline-block;
+    border-radius: $border-radius;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+    font-size: $base-font-size;
+    color: rgba(0,0,0,.6);
+    background: #E0E1E2;
+    text-decoration: none;
+    font-family: "verdana", Arial,sans-serif;
+    zoom: 1;
+    @include transition(all 0.1s linear);
+
+    &.active, &:hover {
+      background-color: #C0C1C2;
+      color: rgba(0,0,0,.8);
+    }
+
+    // TYPES
+    &.default { @extend %type-default; }
+    &.danger { @extend %type-danger; }
+
+  }
+}
