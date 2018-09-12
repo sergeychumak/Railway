@@ -1,0 +1,33 @@
+$css-prefix: railway;
+$base-font-size: 1rem;
+$border-radius: 2px;
+
+// COLORS
+  $red-color: #db262d;
+    $red-hover-color: lighten( $red-color, 10% );
+
+// MIXIN
+  @mixin transition($v) {
+    -webkit-transition: $v;
+    -moz-transition: $v;
+    transition: $v;
+  }
+
+// EXTEND/INHERITANCE
+  %type-default {
+    font-weight: 400;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(34,36,38,.1) inset;
+    &:hover, &.active {
+      background-color: #fff;
+      box-shadow: 0 0 0 1px rgba(34,36,38,.3) inset;
+    }
+  }
+  %type-danger {
+    color: #fff;
+    background-color: $red-color;
+    &:hover, &.active {
+      color: #fff;
+      background-color: $red-hover-color;
+    }
+  }
