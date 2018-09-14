@@ -1,21 +1,18 @@
 {
-  "name": "railway",
-  "version": "1.0.0",
-  "description": "beta design system",
-  "author": "sergey <sergeychumakru@gmail.com>",
-  "private": true,
-  "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
-    "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
-    "test": "npm run unit",
-    "lint": "eslint --ext .js,.vue src test/unit",
-    "build": "node build/build.js",
-    "build_publish": "node build/build_publish.js"
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "author": {
+    "name": "sergey",
+    "email": "sergeychumakru@gmail.com"
   },
   "dependencies": {
     "vue": "^2.5.2"
   },
+  "deprecated": false,
+  "description": "beta design system",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
@@ -88,9 +85,21 @@
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+  "license": "MIT",
+  "main": "./src/index",
+  "name": "railway-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeychumak/Railway"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "start": "npm run dev",
+    "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
+    "test": "npm run unit",
+    "lint": "eslint --ext .js,.vue src test/unit",
+    "build": "node build/build.js",
+    "build_publish": "node build/build_publish.js"
+  },
+  "version": "0.0.1"
 }
