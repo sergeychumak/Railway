@@ -37,7 +37,7 @@ Vue.use(VueRouter)
 const router = new VueRouter({routes: [
   { path: '/components/button', component: DemoButton },
   { path: '/components/test', component: DemoTest },
-  { path: '/', redirect: '/components/test' }
+  { path: '/', redirect: '/components/button' }
 ]})
 
 /**
