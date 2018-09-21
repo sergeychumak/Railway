@@ -1,7 +1,7 @@
-@import './../variables';
+@import '../../variables/default';
 
 .#{$css-prefix} {
-  &.button {
+  &.button#{$css-prefix-business} {
     padding: 0.6rem;
     display: inline-block;
     border-radius: $border-radius;
