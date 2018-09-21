@@ -1,0 +1,31 @@
+@import './../../variables/demix';
+
+.#{$css-prefix} {
+  &.button#{$css-prefix-business} {
+    width: 206.5px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: #bad532;
+    font-family: DINPro;
+    font-size: 13px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: #3a3b3a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 auto 0 2rem;
+  }
+}

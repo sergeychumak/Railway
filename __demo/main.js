@@ -16,6 +16,7 @@ import RailwayUI from '../src/index.js'
  * */
 
 import DemoButton from './components/DemoButton.vue'
+import DemoTest from './components/DemoTest.vue'
 
 /**
  * ******************************************************************************
@@ -35,6 +36,7 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({routes: [
   { path: '/components/button', component: DemoButton },
+  { path: '/components/test', component: DemoTest },
   { path: '/', redirect: '/components/button' }
 ]})
 
