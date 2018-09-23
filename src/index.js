@@ -2,10 +2,12 @@ import './styles/style.scss'
 
 import Button from './components/Button.vue'
 import Test from './components/Test.vue'
+import Grid from './components/Grid.vue'
 
 const components = {
   Button,
-  Test
+  Test,
+  Grid
 }
 
 const install = function (Vue, opts = {}) {

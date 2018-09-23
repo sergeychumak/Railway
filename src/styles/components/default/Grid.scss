@@ -1,0 +1,63 @@
+@import '../../variables/default';
+
+.#{$css-prefix} {
+  &.grid#{$css-prefix-business} {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+
+    &.grid-1-1, &.grid-1 { width: 100% }
+
+    &.grid-1-2 { width: 50% }
+    &.grid-2-2 { width: 100% }
+
+    &.grid-1-4      { width: 25% }
+    &.grid-2-4    { width: 50% }
+    &.grid-3-4    { width: 75% }
+    &.grid-4-4    { width: 100% }
+
+    &.grid-1-6 { width: 16.6667% }
+    &.grid-2-6  { width: 33.3333% }
+    &.grid-3-6 { width: 50% }
+    &.grid-4-6 { width: 66.6667% }
+    &.grid-5-6 { width: 83.3333% }
+    &.grid-6-6 { width: 100% }
+
+    &.grid-1-8 { width: 12.5% }
+    &.grid-2-8 { width: 25% }
+    &.grid-3-8 { width: 37.5% }
+    &.grid-4-8 { width: 50% }
+    &.grid-5-8 { width: 62.5% }
+    &.grid-6-8 { width: 75% }
+    &.grid-7-8 { width: 87.5% }
+    &.grid-8-8 { width: 100% }
+
+    &.grid-1-24                 { width: 4.1667% }
+    &.grid-2-24,&.grid-1-12      { width: 8.3333% }
+    &.grid-3-24                 { width: 12.5% }
+    &.grid-4-24,&.grid-2-12      { width: 16.6667% }
+    &.grid-5-24                 { width: 20.8333% }
+    &.grid-6-24,&.grid-3-12,     { width: 25% }
+    &.grid-7-24                 { width: 29.1667% }
+    &.grid-8-24,&.grid-4-12      { width: 33.3333% }
+    &.grid-9-24        { width: 37.5% }
+    &.grid-10-24,&.grid-5-12     { width: 41.6667% }
+    &.grid-11-24                { width: 45.8333% }
+    &.grid-12-24,&.grid-6-12    { width: 50% }
+    &.grid-13-24                { width: 54.1667% }
+    &.grid-14-24,&.grid-7-12     { width: 58.3333% }
+    &.grid-15-24               { width: 62.5% }
+    &.grid-16-24,&.grid-8-12     { width: 66.6667% }
+    &.grid-17-24                { width: 70.8333% }
+    &.grid-18-24,&.grid-9-12    { width: 75% }
+    &.grid-19-24                { width: 79.1667% }
+    &.grid-20-24,&.grid-10-12    { width: 83.3333% }
+    &.grid-21-24             { width: 87.5% }
+    &.grid-22-24,&.grid-11-12    { width: 91.6667% }
+    &.grid-23-24                { width: 95.8333% }
+    &.grid-24-24,&.grid-12-12 { width: 100% }
+
+
+
+  }
+}
