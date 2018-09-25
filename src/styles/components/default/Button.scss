@@ -2,18 +2,37 @@
 
 .#{$css-prefix} {
   &.button#{$css-prefix-business} {
-    padding: 0.6rem;
-    display: inline-block;
-    border-radius: $border-radius;
-    white-space: nowrap;
-    text-align: center;
+    background-color: #fff;
+    border-color: #dbdbdb;
+    border-width: 1px;
+    color: #363636;
     cursor: pointer;
-    font-size: $base-font-size;
-    color: rgba(0,0,0,.6);
-    background: #E0E1E2;
-    text-decoration: none;
-    font-family: "verdana", Arial,sans-serif;
-    zoom: 1;
+    justify-content: center;
+    padding-bottom: calc(.375em - 1px);
+    padding-left: .75em;
+    padding-right: .75em;
+    padding-top: calc(.375em - 1px);
+    text-align: center;
+    white-space: nowrap;
+
+    -webkit-appearance: none;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: none;
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2.25em;
+    justify-content: flex-start;
+    line-height: 1.5;
+    padding-bottom: calc(.375em - 1px);
+    padding-left: calc(.625em - 1px);
+    padding-right: calc(.625em - 1px);
+    padding-top: calc(.375em - 1px);
+    position: relative;
+    vertical-align: top;
+
+
     @include transition(all 0.1s linear);
 
     &.active, &:hover {
