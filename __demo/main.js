@@ -18,6 +18,8 @@ import RailwayUI from '../src/index.js'
 import DemoButton from './components/DemoButton.vue'
 import DemoTest from './components/DemoTest.vue'
 import DemoGrid from './components/DemoGrid.vue'
+import DemoMenu from './components/DemoMenu.vue'
+import DemoBreadcrumb from './components/DemoBreadcrumb.vue'
 
 /**
  * ******************************************************************************
@@ -39,7 +41,9 @@ const router = new VueRouter({routes: [
   { path: '/components/button', component: DemoButton },
   { path: '/components/test', component: DemoTest },
   { path: '/components/grid', component: DemoGrid },
-  { path: '/', redirect: '/components/grid' }
+  { path: '/components/menu', component: DemoMenu },
+  { path: '/components/breadcrumb', component: DemoBreadcrumb },
+  { path: '/', redirect: '/components/breadcrumb' }
 ]})
 
 /**
