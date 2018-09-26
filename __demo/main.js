@@ -43,7 +43,7 @@ const router = new VueRouter({routes: [
   { path: '/components/grid', component: DemoGrid },
   { path: '/components/menu', component: DemoMenu },
   { path: '/components/breadcrumb', component: DemoBreadcrumb },
-  { path: '/', redirect: '/components/breadcrumb' }
+  { path: '/', redirect: '/components/menu' }
 ]})
 
 /**
