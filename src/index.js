@@ -3,11 +3,13 @@ import './styles/style.scss'
 import Button from './components/Button.vue'
 import Test from './components/Test.vue'
 import Grid from './components/Grid.vue'
+import Breadcrumb from './components/Breadcrumb.vue'
 
 const components = {
   Button,
   Test,
-  Grid
+  Grid,
+  Breadcrumb
 }
 
 const install = function (Vue, opts = {}) {
