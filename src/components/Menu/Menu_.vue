@@ -1,6 +1,14 @@
 <template>
   <aside :class="getClassName()" @click="clickHandler">
-
+    <ul :class="getClassName('list')">
+      <li :class="getClassName('listItem')"><a :class="getClassName('listItemLink')">Dashboard</a></li>
+    </ul>
+    <ul :class="getClassName('list')">
+      <li :class="getClassName('listItem')"><a :class="getClassName('listItemLink')">Dashboard</a></li>
+    </ul>
+    <ul :class="getClassName('list')">
+      <li :class="getClassName('listItem')"><a :class="getClassName('listItemLink')">Dashboard</a></li>
+    </ul>
     <template v-for="item in testData">
       <p :class="getClassName('label')">
         {{item.name}}
@@ -72,14 +80,9 @@
         classNamePrefix: "railway",
         className: 'menu' + this.site.charAt(0).toUpperCase() + this.site.slice(1).toLowerCase(),
         testData : [
-          { name: 'Группа 1', items: [
-            { name: 'Элемент 1.1' },
-            { name: 'Элемент 1.2' },
-          ] },
-          { name: 'Группа 2', items: [
-              { name: 'Элемент 2.1' },
-              { name: 'Элемент 2.2' },
-            ] },
+          { name: 'Элемент 0' },
+          { name: 'Элемент 1' },
+          { name: 'Элемент 2' }
         ]
       }
     },

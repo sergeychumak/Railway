@@ -4,14 +4,16 @@ import Button from './components/Button.vue'
 import Test from './components/Test.vue'
 import Grid from './components/Grid.vue'
 import Breadcrumb from './components/Breadcrumb.vue'
-import Menu from './components/Menu.vue'
+import Menu from './components/Menu/Menu.vue'
+import MenuItems from './components/Menu/Items'
 
 const components = {
   Button,
   Test,
   Grid,
   Breadcrumb,
-  Menu
+  Menu,MenuItems
+
 }
 
 const install = function (Vue, opts = {}) {
