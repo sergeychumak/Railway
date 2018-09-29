@@ -11,7 +11,7 @@
         :items="item.childs"></railway-menuItems>
     </template>
     <template v-else>
-      <a :class="getClassName('listItemLink')">{{item.name}}</a>
+      <a :class="getClassName('listItemLink')" @click.prevent="clickEvent(item)">{{item.name}}</a>
     </template>
   </li>
 </template>
@@ -24,12 +24,20 @@
         return this.$parent.getClassName(el,mod)
       },
       toggleShowChilds: function(){
-
         if ('showChilds' in this.item){
           this.item.showChilds = !this.item.showChilds
         }else{
           this.$set(this.item, 'showChilds', false)
         }
+      },
+      clickEvent: function(item){
+        //return this.$root.clickLink(item)
+        // console.log('asd');
+         //console.log(this.$parent.$route.push(item.to));
+        // router.push('home')
+        // if ('to' in item){
+        //   this.$route.push(item.to)
+        // }
       }
     }
   }

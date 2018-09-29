@@ -7,6 +7,11 @@
 
 <script>
   export default {
+    methods:{
+      clickLink:function () {
+        console.log(1)
+      }
+    },
     data: function () {
       return {
         items: [
