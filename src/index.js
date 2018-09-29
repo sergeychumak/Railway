@@ -6,13 +6,14 @@ import Grid from './components/Grid.vue'
 import Breadcrumb from './components/Breadcrumb.vue'
 import Menu from './components/Menu/Menu.vue'
 import MenuItems from './components/Menu/Items'
+import MenuItem from './components/Menu/Item'
 
 const components = {
   Button,
   Test,
   Grid,
   Breadcrumb,
-  Menu,MenuItems
+  Menu,MenuItems,MenuItem
 
 }
 
