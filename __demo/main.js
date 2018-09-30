@@ -39,10 +39,12 @@ Vue.use(VueRouter)
  * */
 
 const router = new VueRouter({routes: [
-  { path: '/components/index', component: DemoIndex },
-  { name:"DemoButton", path: '/components/button', component: DemoButton },
+  { path: '/components/index', component: DemoIndex , children: [
+      { name:"DemoButton", path: '/button', component: DemoButton },
+      { name:"DemoGrid", path: '/grid', component: DemoGrid },
+    ] },
   { path: '/components/test', component: DemoTest },
-  { path: '/components/grid', component: DemoGrid },
+
   { path: '/components/menu', component: DemoMenu },
   { path: '/components/breadcrumb', component: DemoBreadcrumb },
   { path: '/', redirect: '/components/index' }

@@ -7,11 +7,12 @@
         <i class="material-icons" v-else>expand_less</i>
       </div>
       <railway-menuItems
+        @clickHandler="clickHandler"
         :show="item.showChilds"
         :items="item.childs"></railway-menuItems>
     </template>
     <template v-else>
-      <a :class="getClassName('listItemLink')" @click.prevent="clickEvent(item)">{{item.name}}</a>
+      <a :class="getClassName('listItemLink')" @click.prevent="clickHandler(item)">{{item.name}}</a>
     </template>
   </li>
 </template>
@@ -30,14 +31,8 @@
           this.$set(this.item, 'showChilds', false)
         }
       },
-      clickEvent: function(item){
-        //return this.$root.clickLink(item)
-        // console.log('asd');
-         //console.log(this.$parent.$route.push(item.to));
-        // router.push('home')
-        // if ('to' in item){
-        //   this.$route.push(item.to)
-        // }
+      clickHandler: function(item){
+        this.$emit("clickHandler", item)
       }
     }
   }

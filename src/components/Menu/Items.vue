@@ -1,7 +1,7 @@
 <template>
   <ul :class="getClassName('list')">
     <template v-for="item in items">
-      <railway-menuItem :item="item"></railway-menuItem>
+      <railway-menuItem :item="item" @clickHandler="clickHandler"></railway-menuItem>
     </template>
   </ul>
 </template>
@@ -16,6 +16,9 @@
       getClassName (el="",mod='') {
         if (!this.show) mod="hidden"
         return this.$parent.getClassName(el,mod)
+      },
+      clickHandler: function(item){
+        this.$emit('clickHandler', item)
       }
     }
   }
