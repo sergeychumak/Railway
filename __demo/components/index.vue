@@ -9,12 +9,12 @@
    <railway-grid>
      <railway-grid  grid_1_4 >
        <div style="width: 100%;border-right: 1px solid #eee">
-         <railway-menu :items="items"></railway-menu>
+         <railway-menu :items="items" @clickHandler="clickLink"></railway-menu>
        </div>
 
      </railway-grid>
      <railway-grid  grid_3_4 >
-       <router-view
+       <router-view></router-view>
      </railway-grid>
    </railway-grid>
  </div>
@@ -30,7 +30,7 @@
           { name: 'Разрабочики' },
           { name: 'Компоненты', showChilds: true, childs: [
               { name: 'Button', to: "DemoButton" },
-              { name: 'Grid' },
+              { name: 'Grid' , to: "DemoGrid"},
               { name: 'Breadcrumb' },
               { name: 'Menu' }
             ]
@@ -50,6 +50,13 @@
           { name: 'Элемент 10' },
           { name: 'Элемент 1' }
         ]
+      }
+    },
+    methods: {
+      clickLink: function (item) {
+        console.log(1)
+        console.log(item)
+        this.$router.push({ name: item.to })
       }
     }
   }

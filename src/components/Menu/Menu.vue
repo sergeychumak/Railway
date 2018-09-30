@@ -1,6 +1,6 @@
 <template>
-  <aside :class="getClassName()" @click="clickHandler">
-    <railway-menuItems :items="items"></railway-menuItems>
+  <aside :class="getClassName()">
+    <railway-menuItems :items="items" @clickHandler="clickHandler"></railway-menuItems>
   </aside>
 </template>
 <script>
@@ -25,8 +25,8 @@
         }
         return this.classNamePrefix + ' ' + this.className+el
       },
-      clickHandler (e) {
-        this.$emit('click', e)
+      clickHandler (item) {
+        this.$emit('clickHandler', item)
       }
     }
   }
