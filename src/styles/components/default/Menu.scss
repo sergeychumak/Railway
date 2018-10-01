@@ -3,8 +3,6 @@
 .#{$css-prefix} {
   &.menu#{$css-prefix-business} {
 
-
-
     & li ul {
       border-left: 1px solid #dbdbdb;
       margin-left: .75em;
@@ -38,6 +36,14 @@
             text-decoration: none;
             text-transform: uppercase;
             background-color: #f5f5f5;
+          }
+          &_active {
+            background-color: #3273dc;
+            color: #fff;
+            &:hover {
+              background-color: #367ced;
+              color: #fff;
+            }
           }
         }
       }

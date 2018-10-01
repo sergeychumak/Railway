@@ -4,6 +4,8 @@
  * ************************************************************************
  * */
 
+import './style.scss'
+
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueHighlightJS from 'vue-highlightjs'

@@ -12,7 +12,7 @@
         :items="item.childs"></railway-menuItems>
     </template>
     <template v-else>
-      <a :class="getClassName('listItemLink')" @click.prevent="clickHandler(item)">{{item.name}}</a>
+      <a :class="getClassName('listItemLink', item.active ? 'active':'')" @click.prevent="clickHandler(item)">{{item.name}}</a>
     </template>
   </li>
 </template>
