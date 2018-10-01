@@ -21,7 +21,7 @@
         if (el) el = "__"+el
         if (mod) {
           mod = "_"+mod
-          return this.classNamePrefix + ' ' + this.className+el + " "+this.className+el+mod
+          return this.classNamePrefix + ' ' + this.className + el + " "+this.className + el + mod
         }
         return this.classNamePrefix + ' ' + this.className+el
       },
