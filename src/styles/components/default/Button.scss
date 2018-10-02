@@ -3,6 +3,46 @@
 .#{$css-prefix} {
   &.button#{$css-prefix-business} {
     background-color: #fff;
+    border: 1px solid #dbdbdb;
+    color: #363636;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(.375em - 1px);
+    padding-left: .75em;
+    padding-right: .75em;
+    padding-top: calc(.375em - 1px);
+    text-align: center;
+    white-space: nowrap;
+
+    -webkit-appearance: none;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: none;
+    display: inline-flex;
+    font-size: 1rem;
+    line-height: 1.5;
+    position: relative;
+    vertical-align: top;
+
+    &_color {
+      &_white {background-color: #fff;color: #0a0a0a;}
+      &_light {background-color: #f5f5f5;color: #363636;}
+      &_dark {background-color: #363636;color: #f5f5f5;}
+      &_black {background-color: #0a0a0a;color: #fff;}
+      &_text {background-color: transparent;border-color: transparent;color: #4a4a4a;text-decoration: underline;}
+
+      &_primary {background-color: #00d1b2;color: #fff;}
+      &_link {background-color: #3273dc;color: #fff;}
+      &_info {background-color: #209cee;color: #fff;}
+      &_success {background-color: #23d160;color: #fff;}
+      &_warning {background-color: #ffdd57;color: #333;}
+      &_danger {background-color: #ff3860;color: #fff;}
+
+    }
+
+  }
+  &.buttonA#{$css-prefix-business} {
+    background-color: #fff;
     border-color: #dbdbdb;
     border-width: 1px;
     color: #363636;

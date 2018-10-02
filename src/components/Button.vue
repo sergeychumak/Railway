@@ -1,31 +1,37 @@
 <template>
-  <div
-    :class="classObject"
-    @click="clickHandler"
-  >
-    <slot/>
-  </div>
+    <button v-if="type==='button'" :class="classObject"><slot/></button>
+    <a v-else-if="type==='href'" :class="classObject"><slot/></a>
+  <!--<a :class="classObject"><slot/>
+  </a>-->
+
+  <!--<a class="button">Anchor</a>-->
+
+
 </template>
 <script>
   export default {
     name: 'railway-button',
     props: {
       site: { type: String, default: "default" },
-      active: { type: Boolean, default: false },
-      loading: { type: Boolean, default: false },
-      disabled: { type: Boolean, default: false },
-      type: { type: String },
-      size: { type: String }
+      href: { type: Boolean, default: false },
+      color:  { type: String, default: "white" }
+    },
+    data: function(){
+      return {
+        prefix: 'railway',
+        className : 'button' + this.site.charAt(0).toUpperCase() + this.site.slice(1).toLowerCase(),
+        type: this.href ? 'href' : 'button'
+      }
     },
     computed: {
       classObject () {
         return [
-          'railway',
-          'button' + this.site.charAt(0).toUpperCase() + this.site.slice(1).toLowerCase(),
+          this.prefix,
+          this.className,
+          this.className + '_color_' + this.color,
           { 'active': this.active },
           { 'loading': this.loading },
           { 'disabled': this.disabled },
-          this.type,
           this.size
         ]
       }
