@@ -1,4 +1,4 @@
-@import '../../variables/default';
+@import '../../variables/default/raylway';
 
 .#{$css-prefix} {
   &.button#{$css-prefix-business} {
@@ -41,48 +41,5 @@
     }
 
   }
-  &.buttonA#{$css-prefix-business} {
-    background-color: #fff;
-    border-color: #dbdbdb;
-    border-width: 1px;
-    color: #363636;
-    cursor: pointer;
-    justify-content: center;
-    padding-bottom: calc(.375em - 1px);
-    padding-left: .75em;
-    padding-right: .75em;
-    padding-top: calc(.375em - 1px);
-    text-align: center;
-    white-space: nowrap;
 
-    -webkit-appearance: none;
-    align-items: center;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    box-shadow: none;
-    display: inline-flex;
-    font-size: 1rem;
-    height: 2.25em;
-    justify-content: flex-start;
-    line-height: 1.5;
-    padding-bottom: calc(.375em - 1px);
-    padding-left: calc(.625em - 1px);
-    padding-right: calc(.625em - 1px);
-    padding-top: calc(.375em - 1px);
-    position: relative;
-    vertical-align: top;
-
-
-    @include transition(all 0.1s linear);
-
-    &.active, &:hover {
-      background-color: #C0C1C2;
-      color: rgba(0,0,0,.8);
-    }
-
-    // TYPES
-    &.default { @extend %type-default; }
-    &.danger { @extend %type-danger; }
-
-  }
 }
