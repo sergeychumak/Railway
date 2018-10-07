@@ -3,8 +3,8 @@
  * global import
  * ************************************************************************
  * */
-
 import './style.scss'
+
 
 import Vue from 'vue'
 import VueRouter from 'vue-router'
@@ -23,6 +23,7 @@ import DemoTest from './components/DemoTest.vue'
 import DemoGrid from './components/DemoGrid.vue'
 import DemoMenu from './components/DemoMenu.vue'
 import DemoBreadcrumb from './components/DemoBreadcrumb.vue'
+import DemoColor from './components/DemoColor.vue'
 
 /**
  * ******************************************************************************
@@ -42,6 +43,7 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({routes: [
   { path: '/components/index', component: DemoIndex , children: [
+      { name:"DemoColor", path: '/color', component: DemoColor },
       { name:"DemoButton", path: '/button', component: DemoButton },
       { name:"DemoGrid", path: '/grid', component: DemoGrid },
     ] },

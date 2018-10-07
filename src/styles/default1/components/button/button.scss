@@ -1,0 +1,48 @@
+@import '../../prefixs';
+@import 'variables';
+
+//.#{$css-prefix}Button#{$css-prefix-business} {
+//  @include unselectable;
+//  background-color: $button-background-color;
+//  border-color: $button-border-color;
+//  border-width: $button-border-width;
+//  color: $button-color;
+//  cursor: pointer;
+//  justify-content: center;
+//  padding-bottom: $button-padding-vertical;
+//  padding-left: $button-padding-horizontal;
+//  padding-right: $button-padding-horizontal;
+//  padding-top: $button-padding-vertical;
+//  text-align: center;
+//  white-space: nowrap;
+//}
+
+.#{$css-prefix}Button#{$css-prefix-business} {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 5px 15px 6px;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: color .1s linear,background-color .2s linear,border .2s linear,box-shadow .2s linear;
+  color: #515a6e;
+  background-color: #fff;
+  border-color: #dcdee2;
+  &:hover{
+    color: #57a3f3;
+    background-color: #fff;
+    border-color: #57a3f3;
+  }
+}
+

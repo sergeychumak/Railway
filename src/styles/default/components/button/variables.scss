@@ -1,0 +1,27 @@
+@import '../../base/_all';
+
+$button-background-color: $white;
+$button-border-color: $grey-lighter;
+$button-border-width: $all-border-width;
+$button-color: $grey-darker;
+$button-padding-vertical: calc(0.375em - #{$button-border-width}) !default
+$button-padding-horizontal: 0.75em !default
+
+
+$colour1: rgb(255,255,255); // white
+$colour2: rgb(255,0,0); // red
+$colour3: rgb(135,206,250); // sky blue
+$colour4: rgb(255,255,0);   // yellow
+
+$colors: $colour1, $colour2, $colour3, $colour4;
+
+@for $i from 1 through length($colors) {
+  #cp#{$i} {
+    background-color: rgba(nth($colors, $i), 0.6);
+
+    &:hover {
+      background-color: rgba(nth($colors, $i), 1);
+      cursor: pointer;
+    }
+  }
+}

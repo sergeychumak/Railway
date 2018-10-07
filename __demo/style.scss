@@ -1,11 +1,16 @@
+
+@import './../src/styles/style';
+
 html, body {
   height:100%;
   margin:0;
 }
 .railwaySystem{
+
   display: flex;
   flex-direction: column;
   height:100%;
+
 
   & .headerBlockWrap{
     //background: #eee;
@@ -61,11 +66,81 @@ html, body {
 
 }
 
-//
-//
-//.aSide {
-//  width: 100%;
-//  height: 100%;
-//  border-right: 1px solid #eee;
-//  margin-right: 10px;
-//}
+/* PAGES */
+  /* DEMO-COLOR */
+  .color-block {
+    padding: 20px;
+    &__primary {
+      background: $primary;
+      &_light { background: $primary-light; }
+      &_dark { background: $primary-dark; }
+      &_invert { background: $primary-invert; }
+    }
+    &__info {
+      background: $info;
+      &_light { background: $info-light; }
+      &_dark { background: $info-dark; }
+      &_invert { background: $info-invert; }
+    }
+    &__success {
+      background: $success;
+      &_light { background: $success-light; }
+      &_dark { background: $success-dark; }
+      &_invert { background: $success-invert; }
+    }
+    &__warning {
+      background: $warning;
+      &_light { background: $warning-light; }
+      &_dark { background: $warning-dark; }
+      &_invert { background: $warning-invert; }
+    }
+    &__error {
+      background: $error;
+      &_light { background: $error-light; }
+      &_dark { background: $error-dark; }
+      &_invert { background: $error-invert; }
+    }
+    &__title {
+      background: $title;
+      &_light { background: $title-light; }
+      &_dark { background: $title-dark; }
+      &_invert { background: $title-invert; }
+    }
+    &__content {
+      background: $content;
+      &_light { background: $content-light; }
+      &_dark { background: $content-dark; }
+      &_invert { background: $content-invert; }
+    }
+    &__subColor {
+      background: $subColor;
+      &_light { background: $subColor-light; }
+      &_dark { background: $subColor-dark; }
+      &_invert { background: $subColor-invert; }
+    }
+    &__disabled {
+      background: $disabled;
+      &_light { background: $disabled-light; }
+      &_dark { background: $disabled-dark; }
+      &_invert { background: $disabled-invert; }
+    }
+    &__border {
+      background: $border;
+      &_light { background: $border-light; }
+      &_dark { background: $border-dark; }
+      &_invert { background: $border-invert; }
+    }
+    &__divider {
+      background: $divider;
+      &_light { background: $divider-light; }
+      &_dark { background: $divider-dark; }
+      &_invert { background: $divider-invert; }
+    }
+    &__background {
+      background: $background;
+      &_light { background: $background-light; }
+      &_dark { background: $background-dark; }
+      &_invert { background: $background-invert; }
+    }
+  }
+

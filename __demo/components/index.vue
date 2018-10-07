@@ -26,6 +26,7 @@
     data: function () {
       return {
         items: [
+          {name: 'Color', to: "DemoColor"},
           {name: 'О системе'},
           {name: 'Разрабочики'},
           {
